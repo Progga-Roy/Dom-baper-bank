@@ -7,7 +7,43 @@
     <title>Bank Inside</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2 class="text-5xl text-center  text-fuchsia-500 mt-10 ">Let's get some <span class="font-bold text-fuchsia-700 ">MONNNNNNNEY</span> :) !!</h2>
+<body class="bg-blue-100">
+    <h2 class="text-5xl text-center  text-fuchsia-500 mt-10 ">Let's get some <span class="font-bold text-fuchsia-700 ">MONNNNNNNEY</span> :)</h2>
+
+
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 mt-12 w-3/4 mx-auto">
+                <div class="bg-sky-500 p-12 rounded">
+                    <h3 class="text-2xl text-white font-medium">Deposit</h3>
+                    <h2  class="text-5xl text-white font-medium">  $<span id="deposit-amount">00</span></h2>
+                </div>
+                <div class="bg-pink-500 p-12 rounded">
+                    <h3 class="text-2xl text-white font-medium">Withdraw</h3>
+                    <h2 id="withdraw-amount" class="text-5xl text-white font-medium">$00</h2>
+                </div>
+                <div class="bg-yellow-500 p-12 rounded">
+                    <h3 class="text-2xl text-white font-medium">Balance</h3>
+                    <h2 class="text-5xl text-white font-medium">$1240</h2>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid grid-cols-2 gap-4 mt-12 w-3/4 mx-auto">
+                <div class="bg-teal-500 p-12 rounded">
+                    <h3 class="text-3xl text-white font-medium">Please Deposit</h3>
+                   <input type="text" placeholder="$ amount you want to deposit" id="deposit-field" class="p-1 w-3/4  mx-auto rounded mt-2">
+                   <button id="deposit-btn" class="px-4 py-2 bg-sky-700 block text-white rounded mt-2 font-medium">Deposit</button>
+                </div>
+                <div class="bg-purple-500 p-12 rounded">
+                    <h3 class="text-3xl text-white font-medium">Please Withdraw</h3>
+                    <input type="text" name="" id="withdraw-field" placeholder="$ amount you want to withdraw" class="p-1 w-3/4 mx-auto rounded mt-2">
+                    <button id="withdraw-btn" class="px-4 py-2 bg-sky-700 block text-white rounded mt-2 font-medium" >Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
 </body>
 </html>
