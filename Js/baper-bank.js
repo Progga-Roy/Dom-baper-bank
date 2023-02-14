@@ -18,3 +18,8 @@ else{
 
 })
 
+document.getElementById('deposit-btn').addEventListener('click',function(){
+    const depositField = document.getElementById('deposit-field');
+    const depositText = depositField.value;
+      console.log(depositText)
+})
